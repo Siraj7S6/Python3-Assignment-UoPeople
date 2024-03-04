@@ -1,0 +1,28 @@
+# A basic Calculator For Addition , Subtraction , Multiplication and Division in Python3 it's Assignment of UoPeople.
+
+def calc(l,b):
+
+
+    c = input("What you want to do with these numbers.type 'A' for addition 'D' for Division 'M' For Multiplication and 'S' To Siubtract: ")
+
+    if c == 'A':
+        # print(c)  # to check that does c store the input value or not
+        #print(l+b)
+        return l+b
+    elif c == 'D':
+        #print(l/b)
+        return l/b
+    elif c == 'M':
+        #print(l*b)
+        return l*b
+    elif c == 'S':
+        #print(l-b)
+        return l-b
+    else:
+        print("Invalid input Write in Capital Letters Only")
+
+
+a = int(input("Write first number: "))
+b = int(input("Write second number: "))
+
+print(calc(a,b))
