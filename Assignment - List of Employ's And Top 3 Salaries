@@ -1,0 +1,31 @@
+mainlist= ['Ali','Akram',"Waheed",'Rakesh','Ahmed','Hafeez','Sahil','Sanjina','Sajjad','Mir']
+print("This Is Main List")
+print(mainlist)
+sublist_1 = mainlist[0:5]
+sublist_2 = mainlist[5:]
+print()
+print("This Is sublist_1")
+print(sublist_1)
+print()
+print("This Is sublist_2")
+print(sublist_2)
+sublist_2.append('Kiriti Brown')  # Adding New Employe in sublist_2
+sublist_1.remove('Akram')         # Removing Second Employe from sublist_1
+sublistmerge = sublist_1+sublist_2
+print()
+print("This is Merged List from sublist_1 and sublist_2")
+print(sublistmerge)
+salary_raise = [5200,6240,8320,10400,12480,15600,18720,20800,26000,31200]
+dicts = {"Ali":5200,"Waheed":6240,"Rakesh":8320,"Ahmed":10400,"Hafeez":12480,"Sahil":15600,"Sanjina":18720,"Sajjad":20800,"Mir":26000,"Kiriti Brown":31200}
+print()
+print("This Is Raised Salary Of Employe's By 4%")
+for k,v in dicts.items():
+    print(k,":", v)
+sort_list = sorted(salary_raise,reverse=True)
+top_3_Salararies = sort_list[0:3]
+print()
+print("Top 3 Salaries")
+print()
+print("Kiriti Brown:",top_3_Salararies[0])
+print("Mir:",top_3_Salararies[1])
+print("Sajjad:",top_3_Salararies[2])
